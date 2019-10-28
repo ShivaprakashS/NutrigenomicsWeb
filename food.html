@@ -1,0 +1,19 @@
+{%  include "personal/header.html"%}  <!–– this loads the header.html––>
+
+ <!––this is a jinja template ––>
+  
+ {% load staticfiles %}
+ <link rel="stylesheet" href="{% static 'css/bootstrap.min.css' %}" type = "text/css"/>
+  <link rel="stylesheet" href="{% static 'css/home_style.css' %}" type = "text/css"/>	
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+  	 
+  </script>
+  
+
+{% block content %}
+
+<h1>hello</h1>
+
+	   
+{% endblock %}

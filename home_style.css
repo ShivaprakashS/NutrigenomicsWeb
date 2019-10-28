@@ -1,0 +1,144 @@
+.navbar.navbar-top {
+  padding-top: 20px;
+  padding-bottom: 20px;
+  margin-bottom: 0;
+  border-radius: 0;
+}
+.navbar.navbar-bottom {
+  border-radius: 0;
+}
+.navbar-top {
+  padding-top: 0;
+  margin-top: -12px;
+}
+
+  .navbar-inverse .navbar-nav .active a, .navbar-inverse .navbar-nav .active a.focous, .navbar-inverse .navbar-nav .active a.hover {
+    color:#FFF;
+  } 
+   /*   this is for carousel 
+  .carousel-inner > .item > img, 
+.carousel-inner > .item > a > img{
+width: 100%; 
+margin: auto; 
+} */
+
+
+
+@media (max-height: 600px)
+{
+  .carousel-caption{
+    display: none;
+  }
+
+}
+.inline-list {
+  margin: 0;
+  text-align: center;
+  
+  li {
+    margin: 0.25rem;
+  }
+}
+/*
+.page-name {
+   color: red;
+  -webkit-text-fill-color: #b4efa8;
+  
+  font-weight: bold;
+  font-size: 25px;
+  font-family: arial, helvetica;
+  width: 400px;
+  margin: 50px auto; 
+  text-align: center;
+  position: relative;
+  top: 5px;
+  left: 20px
+}
+
+.container
+{
+  font-weight: bold;
+  font-size: 25px;
+  font-family: arial, helvetica;
+  width: 400px;
+  margin: 50px auto; 
+  text-align: center;
+  position: relative;
+  top: 25px;
+  left: 20px
+*/
+.form-control{
+
+width:450px;
+margin-left: 25px;
+margin-right: 20px; 
+box-shadow:0px 2px 2px 1px rgba(0, 0, 0, 0.3);
+/*float:left;
+position: absolute;
+width: 100%;
+left: 0;
+text-align: center;
+margin:0 auto;*/
+
+} 
+
+a:hover {
+  color: #F60;
+}
+input {
+  outline: none;
+}
+
+input[type=search] {
+  -webkit-appearance: textfield;
+  -webkit-box-sizing: content-box;
+  font-family: inherit;
+  font-size: 100%;
+  margin-left: -20px;
+}
+input::-webkit-search-decoration ,
+input::-webkit-search-cancel-button {
+  display: none; 
+}
+
+
+input[type=search] {
+  background: #ededed url(https://static.tumblr.com/ftv85bp/MIXmud4tx/search-icon.png) no-repeat 9px center;
+  border: solid 1px #ccc;
+  padding: 8px 10px 8px 32px;
+  width: 75px;
+  
+  -webkit-border-radius: 10em;
+  -moz-border-radius: 10em;
+  border-radius: 10em;
+  
+  -webkit-transition: all .5s;
+  -moz-transition: all .5s;
+  transition: all .5s;
+}
+input[type=search]:focus {
+  width: 230px;
+  background-color: #fff;
+  border-color: #66CC75;
+  
+  -webkit-box-shadow: 0 0 5px rgba(109,207,246,.5);
+  -moz-box-shadow: 0 0 5px rgba(109,207,246,.5);
+  box-shadow: 0 0 5px rgba(109,207,246,.5);
+}
+
+
+input:-moz-placeholder {
+  color: #999;
+}
+input::-webkit-input-placeholder {
+  color: #999;
+}
+.navbar-logo{
+  float: left;
+  padding: 0 0 0 0;
+  height: 100%;
+  margin-left: -15px;
+}
+
+
+/* to change active when clicked*/

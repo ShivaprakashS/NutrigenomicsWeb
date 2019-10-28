@@ -1,0 +1,138 @@
+ <!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>kb</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  {% load staticfiles %}
+  <link rel="stylesheet" href="{% static 'css/bootstrap.min.css' %}" type = "text/css"/> 
+  <link rel="stylesheet" href="{% static 'css/home_style.css' %}" type = "text/css"/>	
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"></link>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"> 
+  </script>
+  <script  src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-3-typeahead/4.0.2/bootstrap3-typeahead.min.js"></script>
+  <link rel="stylesheet" href="{% static 'css/typehead.css' %}" type = "text/css"></link>
+
+
+    <script type="text/javascript">
+    	$(function(){
+    		$('.nav a').filter(function(){
+    			return this.href==location.href}).parent().addClass('active').siblings().removeClass('active');
+
+    		$('.nav a').click(function(){
+    			$(this).parent().addClass('active').siblings().removeClass('active')	
+    			});
+    		});
+    </script>
+      <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
+  <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+ 
+      <script>
+  $( function() {
+    var availableTags = [
+      "ActionScript",
+      "AppleScript",
+      "Asp",
+      "BASIC",
+      "C",
+      "C++",
+      "Clojure",
+      "COBOL",
+      "ColdFusion",
+      "Erlang",
+      "Fortran",
+      "Groovy",
+      "Haskell",
+      "Java",
+      "JavaScript",
+      "Lisp",
+      "Perl",
+      "PHP",
+      "Python",
+      "Ruby",
+      "Scala",
+      "Scheme"
+    ];
+    $( "#dd" ).autocomplete({
+      source: availableTags
+    });
+  } );
+  $(document).ready(function() {
+  $('#dropdownList li').find("a").click(function(){
+    
+    $('#dropdown-button').html($(this).html()).append("    <span class='caret'></span>");
+  });
+});
+  </script>
+
+  <style>
+   
+
+  
+  </style>
+</head>
+
+<body >
+<nav class="navbar navbar-default navbar-inverse " role="navigation">
+  <!-- Brand and toggle get grouped for better mobile display -->
+
+	<div class="navbar-header container-fluid">
+	    <button type="button" aria-controls="bs-navbar" aria-expanded="false" class="navbar-toggle" data-toggle="collapse" data-target="#bs-navbar-collapse-1"> 
+	      <span class="sr-only">Toggle navigation</span>
+	      <span class="icon-bar"></span>
+	      <span class="icon-bar"></span>
+	      <span class="icon-bar"></span>
+	    </button>
+	    <a class="navbar-logo" href="#"><img src="{% static 'img/dna.jpg' %}">
+	    <span>
+	    <a class="navbar-brand img-relative" href="#">Neurogenomics knowlege Database </a>
+	</span>
+	</div>
+
+  <!-- Collect the nav links, forms, and other content for toggling -->
+ 	<div class="collapse navbar-collapse  " id="bs-navbar-collapse-1">  
+	    <!--div class="col-sm- col-md-6"-->
+	        <form class="navbar-form" role="search">
+	        <span class="input-group navbar-right col-sm- col-md-6">
+	        	<!-- button 2 types choose one   <input type="Search" class="form-control input-group" placeholder="Search" name="search" type="text"> or below-
+	            <input type="text" class="form-control input-group" placeholder="Search" name="q">
+	            <div class="input-group-btn">
+	                <button class="btn btn-default" type="submit"><i class="glyphicon glyphicon-search"></i></button>-->
+	                
+	                <input type="search" class="" placeholder="Search" name="search" id="dd"> <!-- add class="form-control input-group" if needed" -->
+
+	        
+	        <ul class="nav navbar-nav navbar-right">
+	        	
+
+	    	<li class="dropdown">
+	    		<a href="#" id="dropdown-button" class=" dropdown-toggle" type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">Filter<span class="caret"></span></a>
+
+	            <ul class="dropdown-menu" id="dropdownList" style="background-color: black;">
+	            	<li ><a href="#">none</a></li>
+	              	<li><a href="#">Food</a></li>
+	            	<li><a href="#">Gene</a></li>
+	            	<li><a href="#">Disease</a></li>
+	            </ul>
+	        </li>
+		    	
+
+
+	    	<li class="active "><a href="{% url 'home' %}" >Home</a></li>
+			<li><a href="food.html">About</a></li>
+			<li><a href="#">Contact</a></li>
+			</ul>
+	        </span>
+	        </form>
+
+	</div> 
+	 <!-- /.navbar-collapse -->
+</nav>
+
+<!--<img src="{% static 'img/disease.jpg' %}" id="icon"> -->
+	<!-- carousel-->
+
+
+</body>
+</html>

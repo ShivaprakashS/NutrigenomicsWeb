@@ -1,0 +1,101 @@
+{%  include "personal/header.html"%}  <!–– this loads the header.html––>
+
+ <!––this is a jinja template ––>
+  
+ {% load staticfiles %}
+
+{% block content %}
+
+
+
+<style >
+/*	#icon{
+		max-width: 200px;
+		margin: 1% auto; /* top bottom 1. left right auto*
+	}*/
+	.container-fluid .row{
+		margin: 1% auto;
+	}
+	footer{
+	width: 100%;
+	padding:3%;
+	
+	background-color: black;
+	}
+	.awesome{
+		font-size:50px; 
+		margin: 5px;
+	}
+
+	h2{
+		color: black;
+	}
+	.col-sm-4:hover a h2 {
+		color: blue;
+		text-decoration:none;
+		
+
+	}
+
+
+	@media (max-width: 600px){
+
+		#icon{
+			max-width: 150px;
+		}
+		h2{
+			font-size: 150%;
+		}
+
+	}
+
+</style>
+
+
+
+<div class="container-fluid text-center">
+	<h1>contents</h1>
+	<div class="row">
+		<div class="col-sm-4">
+			<a href="#">
+				<img src="{% static 'img/disease.jpg' %}" id="icon" class="img-responsive"> 
+				<h2>neutrigene/food gfgsfdgfg gdfgfgvfaaaaaaaaaaaa</h2>
+			</a>
+		</div>
+		<div class="col-sm-4 ">
+			<a href="#">
+				<img src="{% static 'img/disease.jpg' %}" id="icon" class="img-responsive"> 
+				<h2 >gene</h2>
+			</a>
+		</div>
+		<div class="col-sm-4">
+			<a href="#">
+				<img src="{% static 'img/disease.jpg' %}" id="icon" class="img-responsive"> 
+				<h2>disease</h2>
+			</a>
+		</div>
+		
+	</div><!-- row image-->
+</div>
+
+
+	<footer class="container-fluid text-center">
+		<div class="row">
+			<div class="col-sm-4 ">
+				<h1>contact</h1><br>
+				<h2>our address contact photo here</h2>
+			</div>
+			<div class="col-sm-4 ">
+				<h1>Connect</h1>
+				<a href="..." class="fa fa-facebook awesome"></a>
+				<a href="..." class="fa fa-twitter awesome"></a>
+				<a href="..." class="fa fa-linkedin awesome"></a>
+			</div>
+			
+			<div class="col-sm-4">
+				<img src="{% static 'img/bunny.png' %}">
+			</div>
+		</div>
+	</footer>
+	   
+{% endblock %}
